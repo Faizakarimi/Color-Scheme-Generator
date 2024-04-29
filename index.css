@@ -1,0 +1,53 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    width: 550px;
+    height: 550px;
+    border: 2px solid green;
+    margin: 0 auto;
+
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding-top: 20px;
+
+}
+
+#color-picker{
+    width: 51px;
+    height: 42px;
+    padding: 0;
+    border: none;
+}
+
+#colorsMenu{
+    width: 312px;
+    height: 42px;
+    padding: 10px;
+    font-weight: 400;
+    border: 1px solid #D1D5DB;
+    /* background: #111827; */
+
+    
+}
+
+#get-btn{
+    /* width: 123px;
+    height: 42px; */
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Inter';
+    padding: 12px 10px;
+    border-radius: 4px;
+    border: 1px solid #D1D5DB;
+}

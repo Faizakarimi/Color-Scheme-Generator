@@ -9,21 +9,21 @@ let r = ''
 let g = ''
 let b = ''
 // colorMode.options[colorMode.selectedIndex].text
-console.log(defaultColor)
+// console.log(defaultColor)
 
 
 colorModeList.addEventListener('change', (e) => {
     mode = e.target.options[colorModeList.selectedIndex].text.toLowerCase()
-    console.log(mode)
+    // console.log(mode)
 })
 colorPicker.addEventListener('change', function (e) {
     defaultColor = e.target.value.substring(1);
     r = parseInt(defaultColor.substr(1, 2), 16)
     g = parseInt(defaultColor.substr(3, 2), 16)
     b = parseInt(defaultColor.substr(5, 2), 16)
-    console.log(defaultColor)
+    // console.log(defaultColor)
     // console.log('e:' + color)
-    console.log(`${r} +${g} +${b}`)
+    // console.log(`${r} +${g} +${b}`)
 })
 
 
@@ -53,13 +53,10 @@ document.getElementById('get-btn').addEventListener('click', getColorScheme)
 // colorContainer.innerHTML = getColorScheme()
 
 document.addEventListener('click', function (e) {
-     if(!navigator.clipboard){
-        console.log('error')
-     }
-    else if(e.target.dataset.color) {
+   if(e.target.dataset.color) {
         Navigator.clipboard.writeText(e.target.dataset.color)
         alert(`e.target.dataset.color copied to clipboard`)
-        console.log(e.target.dataset.color)
+        // console.log(e.target.dataset.color)
     }
 
 })

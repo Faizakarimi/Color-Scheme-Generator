@@ -68,7 +68,7 @@ document.getElementById('get-btn').addEventListener('click', getColorScheme)
 
 document.addEventListener('click', function (e) {
     if (e.target.dataset.color) {
-        Navigator.clipboard.writeText(e.target.dataset.color)
+        navigator.clipboard.writeText(e.target.dataset.color)
         alert(`e.target.dataset.color copied to clipboard`)
         // console.log(e.target.dataset.color)
     }
